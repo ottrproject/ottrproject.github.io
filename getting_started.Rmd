@@ -148,7 +148,7 @@ If you're not a member of the jhudsl GitHub organization, you can use one of the
 - Go to the respective file: `.github/sync.yml` of the OTTR template repository you created your repository from:
     - [File for the main course OTTR_Template updates](https://github.com/ottrproject/OTTR_Template/blob/main/.github/sync.yml)
     - [File for the website OTTR_Template_Website updates](https://github.com/ottrproject/OTTR_Template_Website/blob/main/.github/sync.yml)
-    - [File for the OTTR_Quizzes updates](https://github.com/jhudsl/OTTR_Quizzes/blob/main/.github/sync.yml)
+    - [File for the OTTR_Quizzes updates](https://github.com/ottrproject/OTTR_Quizzes/blob/main/.github/sync.yml)
 
 #### Making edits to this file if you are not part of the jhudsl GitHub organization 
 
