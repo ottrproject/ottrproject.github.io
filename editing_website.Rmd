@@ -463,8 +463,8 @@ navbar.
 
 - [Using version control with GitHub](https://ottrproject.org/Adv_Reproducibility_in_Cancer_Informatics/using-version-control-with-github.html)
 - [Happy Git and GitHub for the useR](https://happygitwithr.com/)
-- [Using Version Control with GitHub](https://ottrproject.org/Adv_Reproducibility_in_Cancer_Informatics/using-version-control-with-github.html)
-- [Using GitHub in a workflow in RStudio](https://ottrproject.org/Tools_for_Reproducible_Workflows_in_R/using-github-in-a-workflow.html)
-- [GitHub for Data Scientists](https://towardsdatascience.com/introduction-to-github-for-data-scientists-2cf8b9b25fba)
+- [Using Version Control with GitHub](https://jhudatascience.org/Adv_Reproducibility_in_Cancer_Informatics/using-version-control-with-github.html)
+- [Using GitHub in a workflow in RStudio](https://hutchdatascience.org/Tools_for_Reproducible_Workflows_in_R/using-github-in-a-workflow.html)
+- [Intro to Git and GitHub](https://www.w3schools.com/git/git_intro.asp?remote=github)
 - [GitHub docs about creating a Pull Request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request)
 - [Making a Pull Request](https://www.atlassian.com/git/tutorials/making-a-pull-request)
