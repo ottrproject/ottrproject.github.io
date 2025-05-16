@@ -59,7 +59,7 @@ jobs:
       continue-on-error: true
       with:
         check_type: urls
-        error_min: 1
+        url_error_min: 1
 
     - name: Declare file path and time
       id: check-report
