@@ -1,1 +1,0 @@
-pages build and deploy action not working without docs folder present
