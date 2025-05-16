@@ -359,7 +359,7 @@ steps.
 
 Once your pull request is open, the OTTR GitHub Actions checks will begin. These checks will generate reports as comments on your pull request.
 
-<img src ="https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/screenshots/gha-checks.png" width=400px">
+<img src ="https://raw.githubusercontent.com/ottrproject/OTTR_Template/main/resources/screenshots/gha-checks.png" width=400px">
 
 Read these comments to begin addressing the problems with more commits
 to your branch.
@@ -367,14 +367,14 @@ to your branch.
 You can adjust what checks are run by editing the
 `config_automation.yml` file. This is further discussed in this section
 about [the GitHub
-Actions](https://github.com/jhudsl/OTTR_Template/wiki/How-to-set-up-and-customize-GitHub-actions-robots).
+Actions](https://github.com/ottrproject/OTTR_Template/wiki/How-to-set-up-and-customize-GitHub-actions-robots).
 
 If you need more information on failed GitHub actions you can scroll to
 the bottom of your pull request where the status of the checks are shown
 and click on `Details` for more information. If you are unsure what the
 error message means and have trouble addressing it, please [file an
 issue on the OTTR_Template repository to get
-help](https://github.com/jhudsl/OTTR_Template/issues/new?assignees=cansavvy&labels=bug&template=course-template-problem-report.md).
+help](https://github.com/ottrproject/OTTR_Template/issues/new?assignees=cansavvy&labels=bug&template=course-template-problem-report.md).
 
 For more on [what to put in a pull request's description, you can read
 this
