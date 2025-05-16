@@ -1,1 +1,1 @@
-https://username.github.io/repository_name/
+http://www.someurl.html
