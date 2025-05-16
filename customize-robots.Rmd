@@ -47,7 +47,7 @@ In the `config_automation.yml` file it is set by:
 check-quizzes: no
 ```
 
-By default, it is set to `no`. But if you wish to [create quizzes on Leanpub](https://github.com/ottrproject/OTTR_Template/wiki/Publishing-on-Leanpub), you should set this to `yes`. This is not necessary if you only want quizzes for Coursera.
+By default, it is set to `no`. But if you wish to [create quizzes on Leanpub](https://www.ottrproject.org/course_publishing.html#publishing-with-leanpub), you should set this to `yes`. This is not necessary if you only want quizzes for Coursera.
 Leanpub needs a particular format for it to upload correctly. This action will look for quizzes in the `quizzes` directory and check for these items. The outcome of these quiz checks will be printed to a GitHub comment on your pull request.
 
 ### Check for broken URLs
