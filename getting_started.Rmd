@@ -25,7 +25,7 @@ Please check out these resources if you are not familiar with R Markdown. Note t
 If you are not familiar with **Git and GitHub**, we recommend going through these chapters from our Reproducibility courses:
 
 - [Making your project open source with GitHub](https://jhudatascience.org/Reproducibility_in_Cancer_Informatics/making-your-project-open-source-with-github.html)
-- [Using version control with GitHub](https://ottrproject.org/Adv_Reproducibility_in_Cancer_Informatics/using-version-control-with-github.html)
+- [Using version control with GitHub](https://jhudatascience.org/Adv_Reproducibility_in_Cancer_Informatics/using-version-control-with-github.html)
 
 
 We offer two suggested approaches for creating content, based on your comfort and interest level in using Git and GitHub:
