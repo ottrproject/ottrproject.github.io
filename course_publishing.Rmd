@@ -549,3 +549,6 @@ These resources are used throughout this Coursera course in the form of ungraded
 Note about links in the plug-ins: The plug-ins used throughout the course feature links to other resources. To follow these links, right-click on them and open in a new tab or window.
 Regardless of the format you choose for the instructional content, you must take and pass the quizzes here on Coursera if you want to earn a Coursera certificate.
 ```
+
+
+
