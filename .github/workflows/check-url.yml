@@ -58,7 +58,7 @@ jobs:
       id: check_results
       continue-on-error: true
       with:
-        check_type: urls
+        check_urls: true
         url_error_min: 1
 
     - name: Declare file path and time
