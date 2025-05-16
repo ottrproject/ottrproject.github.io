@@ -111,7 +111,7 @@ To make sure that your new Docker image is being used for rendering in the GitHu
 
 Then start a new branch so that you can submit a new pull request with your changes.
 
-Now, when you file a pull request, the Dockerfile build for your docker image will be tested automatically by the [GitHub actions](https://github.com/ottrproject/OTTR_Template/wiki/How-to-set-up-and-customize-GitHub-actions-robots) if `docker-test` is set to `yes`. The default is `docker-test: no`
+Now, when you file a pull request, the Dockerfile build for your docker image will be tested automatically by the [GitHub actions](https://www.ottrproject.org/customize-robots.html) if `docker-test` is set to `yes`. The default is `docker-test: no`
 
 ### Modifying the Dockerfile for a new image
 
