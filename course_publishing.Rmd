@@ -12,14 +12,14 @@ Below are some examples of courses created using the [OTTR Template](https://git
 _Introduction to Reproducibility in Cancer Informatics:_  
 
 - [GitHub repository and source code](https://github.com/jhudsl/Reproducibility_in_Cancer_Informatics)
-  - [Bookdown website](https://ottrproject.org/Reproducibility_in_Cancer_Informatics/introduction.html)  
+  - [Bookdown website](https://jhudatascience.org/Reproducibility_in_Cancer_Informatics/introduction.html)  
   - [Leanpub course](https://leanpub.com/universities/courses/jhu/cancer-informatics-for-research-leaders)  
   - [Coursera course](https://www.coursera.org/learn/intro-reproducibility-cancer-informatics)  
 
 _Computing for Cancer Informatics:_  
 
 - [GitHub repository and source code](https://github.com/jhudsl/Computing_for_Cancer_Informatics)
-  - [Bookdown website](https://ottrproject.org/Computing_for_Cancer_Informatics/)  
+  - [Bookdown website](https://jhudatascience.org/Computing_for_Cancer_Informatics/)  
   - [Leanpub course](https://leanpub.com/universities/courses/jhu/cancer-informatics-computing)  
   - [Coursera course](https://www.coursera.org/learn/computing-for-cancer-informatics)  
 
@@ -125,7 +125,7 @@ If you have errors in your course (typically from a quiz formatting issue) the r
 ## Setting up quizzes
 
 Quizzes need to be stored in the `quizzes/` directory. Edit and add quizzes to this directory.
-See and copy this [template quiz](https://github.com/jhudsl/OTTR_Quizzes/blob/main/quizzes/quiz_ch1.md) to get started.
+See and copy this [template quiz](https://github.com/ottrproject/OTTR_Quizzes/blob/main/quizzes/quiz_ch1.md) to get started.
 All quizzes need to be written in the Markua format.
 Refer to their [documentation](https://leanpub.com/markua/read#leanpub-auto-quizzes-and-exercises) (note that it is sometimes vague or outdated).
 The example question types in the template are ones that are verified to work.
@@ -144,7 +144,7 @@ about.md
 ```
 Note that any `.md` files with an `#` in front of the name in the `Book.txt` file will be ignored by Leanpub. We have included an example of this in the `Book.txt` file.  
 
-See an [example quiz here](https://github.com/jhudsl/OTTR_Quizzes/blob/main/quizzes/quiz_ch1.md) Note that you cannot have two quizzes with the same `quiz_id`.
+See an [example quiz here](https://github.com/ottrproject/OTTR_Quizzes/blob/main/quizzes/quiz_ch1.md) Note that you cannot have two quizzes with the same `quiz_id`.
 
 ### Leanpub Quizzes
 
@@ -405,7 +405,7 @@ After you've selected the file click `Upload`:
 
 ![](https://raw.githubusercontent.com/ottrproject/OTTR_Template/main/resources/coursera_screenshots/add-quiz-5.png)
 
-It will let you know if there are any problems uploading the quiz. If the  `coursera_quiz_conversion.R` script failed to render something properly, please [file an issue here](https://github.com/jhudsl/OTTR_Quizzes/issues) describing how it failed and including a file that shows the instance it failed to convert.
+It will let you know if there are any problems uploading the quiz. If the  `coursera_quiz_conversion.R` script failed to render something properly, please [file an issue here](https://github.com/ottrproject/OTTR_Quizzes/issues) describing how it failed and including a file that shows the instance it failed to convert.
 
 Note that images and links are not currently supported in that conversion script. You also cannot have `:` in your prompts or answers.
 
