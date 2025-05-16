@@ -115,7 +115,7 @@ Now, when you file a pull request, the Dockerfile build for your docker image wi
 
 ### Modifying the Dockerfile for a new image
 
-[Read this chapter for instructions on how to modify Docker images](https://ottrproject.org/Adv_Reproducibility_in_Cancer_Informatics/modifying-a-docker-image.html)
+[Read this chapter for instructions on how to modify Docker images](https://jhudatascience.org/Adv_Reproducibility_in_Cancer_Informatics/modifying-a-docker-image.html)
 
 You will probably want to create your Docker image by using the `jhudsl/base_ottr:main` as your base -- this means that all the packages that are in our `jhudsl/base_ottr:main` image will be included in the Docker image you build.
 
