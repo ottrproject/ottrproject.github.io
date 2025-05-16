@@ -461,7 +461,7 @@ navbar.
 
 ## More resources for learning GitHub
 
-- [Using version control with GitHub](https://ottrproject.org/Adv_Reproducibility_in_Cancer_Informatics/using-version-control-with-github.html)
+- [Using version control with GitHub](https://jhudatascience.org/Adv_Reproducibility_in_Cancer_Informatics/using-version-control-with-github.html)
 - [Happy Git and GitHub for the useR](https://happygitwithr.com/)
 - [Using Version Control with GitHub](https://jhudatascience.org/Adv_Reproducibility_in_Cancer_Informatics/using-version-control-with-github.html)
 - [Using GitHub in a workflow in RStudio](https://hutchdatascience.org/Tools_for_Reproducible_Workflows_in_R/using-github-in-a-workflow.html)
