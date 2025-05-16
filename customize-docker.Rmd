@@ -154,7 +154,7 @@ RUN pip3 install \
 
 ### Testing a modified Docker image
 
-[Read this chapter for instructions on how to modify Docker images](https://ottrproject.org/Adv_Reproducibility_in_Cancer_Informatics/modifying-a-docker-image.html)
+[Read this chapter for instructions on how to modify Docker images](https://jhudatascience.org/Adv_Reproducibility_in_Cancer_Informatics/modifying-a-docker-image.html)
 
 When you've added a package to the Dockerfile, you may want to check that it builds successfully before it's added to your repository. You can include changes to your Dockerfile in a pull request which will trigger an automatic testing of building it.
 
