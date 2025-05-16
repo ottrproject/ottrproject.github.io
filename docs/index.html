@@ -11,12 +11,12 @@
 
 
 
-<title>Website Name</title>
+<title> OTTR - Website and Online Course Tools</title>
 
 <script src="site_libs/header-attrs-2.25/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
+<link href="site_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
@@ -30,12 +30,30 @@
        code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
        pre:not([class]) { background-color: white }</style>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
-<link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
 <link href="site_libs/font-awesome-6.4.2/css/all.min.css" rel="stylesheet" />
 <link href="site_libs/font-awesome-6.4.2/css/v4-shims.min.css" rel="stylesheet" />
-<link rel="shortcut icon" href="resources/images/favicon.ico" />
- <!--- go to https://favicon.io/favicon-converter/ to upload an image to make a new favicon.io. You will need to replace the current favicon.io image with the one in the downloaded directory from the website. The current image is in the resources/images/ directory --->
+  <html>
+  
+  <head>
+  <title>Title</title>
+  </head>
+  
+  <body>
+  
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-3GCRY8403S"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    
+    gtag('config', 'G-3GCRY8403S');
+  </script>
+      
+  </body>
+  </html>
 
 <style type="text/css">
   code{white-space: pre-wrap;}
@@ -62,7 +80,7 @@ if (window.hljs) {
 
 
 
-<link rel="stylesheet" href="styles.css" type="text/css" />
+<link rel="stylesheet" href="style.css" type="text/css" />
 
 
 
@@ -243,7 +261,7 @@ $(document).ready(function () {
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="index.html">OTTR Web</a>
+      <a class="navbar-brand" href="index.html">OTTR <img src="resources/images/basic_otter_water.PNG" width = 10px></a>
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
@@ -254,23 +272,209 @@ $(document).ready(function () {
     
   </a>
 </li>
-<li>
-  <a href="setup.html">1. Setup</a>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    <span class="fa fa-star"></span>
+     
+    Getting Started with OTTR Websites
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="getting_started.html#prerequisites-for-using-ottr">
+        <span class="fa fa-asterisk"></span>
+         
+        Prerequisites
+      </a>
+    </li>
+    <li>
+      <a href="getting_started.html">
+        <span class="fa fa-play"></span>
+         
+        Getting Started
+      </a>
+    </li>
+    <li>
+      <a href="editing_website.html">
+        <span class="fa fa-pen"></span>
+         
+        Start writing!
+      </a>
+    </li>
+    <li>
+      <a href="editing_website.html#ottr-checks-on-pull-requests">
+        <span class="fa fa-check"></span>
+         
+        Website checks
+      </a>
+    </li>
+    <li>
+      <a href="editing_website.html#adding-new-pages">
+        <span class="fa fa-plus"></span>
+         
+        Adding new pages
+      </a>
+    </li>
+  </ul>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    <span class="fa fa-lightbulb"></span>
+     
+    Getting Started with OTTR Courses
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="getting_started.html#prerequisites-for-using-ottr">
+        <span class="fa fa-asterisk"></span>
+         
+        Prerequisites
+      </a>
+    </li>
+    <li>
+      <a href="getting_started.html">
+        <span class="fa fa-play"></span>
+         
+        Getting Started
+      </a>
+    </li>
+    <li>
+      <a href="writing_content_courses.html">
+        <span class="fa fa-pen"></span>
+         
+        Start writing!
+      </a>
+    </li>
+    <li>
+      <a href="writing_content_courses.html#ottr-checks-on-pull-requests">
+        <span class="fa fa-check"></span>
+         
+        Course checks
+      </a>
+    </li>
+    <li>
+      <a href="writing_content_courses.html#set-up-images">
+        <span class="fa fa-images"></span>
+         
+        Set up images
+      </a>
+    </li>
+    <li>
+      <a href="writing_content_courses.html#adding-new-pages">
+        <span class="fa fa-plus"></span>
+         
+        Adding new pages
+      </a>
+    </li>
+    <li>
+      <a href="course_publishing.html#choosing-publishing-platforms">
+        <span class="fa fa-tasks"></span>
+         
+        Choosing course publishing platforms
+      </a>
+    </li>
+    <li>
+      <a href="course_publishing.html#publishing-with-bookdown">Publishing with Bookdown</a>
+    </li>
+    <li>
+      <a href="course_publishing.html#publishing-with-leanpub">Publishing with Leanpub</a>
+    </li>
+    <li>
+      <a href="course_publishing.html#publishing-with-coursera">Publishing with Coursera</a>
+    </li>
+  </ul>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    About
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="customize-robots.html">
+        <span class="fa fa-robot"></span>
+         
+        Customizing checks
+      </a>
+    </li>
+    <li>
+      <a href="customize-style.html">
+        <span class="fa fa-palette"></span>
+         
+        Customizing style
+      </a>
+    </li>
+    <li>
+      <a href="customize-docker.html">
+        <span class="fa fa-gears"></span>
+         
+        Customizing Docker
+      </a>
+    </li>
+    <li>
+      <a href="more_features.html#citing-sources">
+        <span class="fa fa-quote-left"></span>
+         
+        Citing sources
+      </a>
+    </li>
+    <li>
+      <a href="more_features.html#giving-credits-to-contributors">
+        <span class="fa fa-award"></span>
+         
+        Giving credits
+      </a>
+    </li>
+    <li>
+      <a href="more_features.html#borrowing-chapters">
+        <span class="fa fa-bookmark"></span>
+         
+        Borrowing chapters
+      </a>
+    </li>
+    <li>
+      <a href="more_features.html#compatibility-with-google-docs">
+        <span class="fa fa-file"></span>
+         
+        Compatibility with Google Docs
+      </a>
+    </li>
+    <li>
+      <a href="more_features.html#google-analytics">
+        <span class="fa fa-chart-line"></span>
+         
+        Google Analytics
+      </a>
+    </li>
+    <li>
+      <a href="ottr-fy.html">
+        <span class="glyphicon glyphicon-sunglasses"></span>
+         
+        OTTR-fying an existing repository
+      </a>
+    </li>
+    <li>
+      <a href="examples.html">About OTTR babies</a>
+    </li>
+  </ul>
 </li>
 <li>
-  <a href="hosting.html">2. Hosting</a>
+  <a href="faqs.html">
+    <span class="fa fa-handshake"></span>
+     
+    Help
+  </a>
 </li>
 <li>
-  <a href="editing.html">Editing</a>
-</li>
-<li>
-  <a href="style.html">3. Style</a>
-</li>
-<li>
-  <a href="git_actions.html">4. Git Actions</a>
-</li>
-<li>
-  <a href="https://www.ottrproject.org/">More ottr docs</a>
+  <a href="https://github.com/ottrproject/OTTR_Template">
+    <span class="fa fa-github"></span>
+     
+    
+  </a>
 </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
@@ -284,35 +488,110 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore"><strong>Website Name</strong></h1>
+<h1 class="title toc-ignore"><img src="resources/images/basic_otter_water.PNG" width = 100px>
+OTTR - Website and Online Course Tools</h1>
 
 </div>
 
 
 <div class="banner_color">
-<p>Banner text!</p>
+<p><br></p>
 </div>
-<div id="about" class="section level3">
-<h3><strong>About</strong></h3>
-<p>This website was created with the OTTR_Template_Website template.
-This enables simpler creation of websites that have automated checks for
-broken URLs and spelling errors, as well as automated rendering of all
-html files. No need to worry about git conflicts for html files!</p>
-<p>Here is how you can include images in your website pages (this one is
-saved in <code>resources/images</code> to keep things tidy:</p>
-<p><img src="resources/images/example_image.png" alt="Example image" width="30%" style="display: block; margin: auto;" /></p>
-<p>We will go through the following:</p>
+<p><img src="resources/images/why-ottr.png" alt="OTTR helps build github based websites with less hassle. Catch potential mistakes before they go live" width="40%" style="display: block; margin: auto;" /></p>
+<div id="what-is-ottr" class="section level2">
+<h2>What is OTTR:</h2>
+<p>OTTR is a set of tools and templates to help you make websites and
+online courses more easily!</p>
+<p>It helps you use <a href="https://github.com/">GitHub</a> to publish
+websites and courses for free.</p>
+</div>
+<div id="benefits-of-ottr" class="section level2">
+<h2>Benefits of OTTR:</h2>
+<ul>
+<li>OTTR is free!</li>
+<li>No software installations needed</li>
+<li>Automatically preview content on GitHub before you publish (not just
+locally!)</li>
+<li>Automatically check spelling (and customize it!)</li>
+<li>Automatically and periodically check for broken links</li>
+<li>Easily customize branding</li>
+<li>Easily include code (and avoid version difference issues using
+Docker containers)</li>
+<li>Easily format courses for learning platforms like <a
+href="https://www.coursera.org/">coursera</a> and <a
+href="https://leanpub.com/">Leanpub</a></li>
+<li>Easily update courses! (only edit once and it gets propagated to all
+locations)</li>
+</ul>
+<p><br> (*Note that you will need to establish a publishing contract
+with coursera if you want to publish there)</p>
+<p>Check out this short video about OTTR:</p>
+<p align="center">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/oQ8d42fSn0o" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
+</p>
+</div>
+<div id="how-to-use-ottr" class="section level2">
+<h2>How to use OTTR:</h2>
 <ol style="list-style-type: decimal">
-<li>How to set up your repository to enable the GitHub actions of the
-template. (Setup tab)</li>
-<li>How to host your website using GitHub (Hosting tab)</li>
-<li>How to modify your website structure (Structure tab)</li>
-<li>How to change your website style (Style tab)</li>
-<li>More information about GitHub Actions (Git Actions tab)</li>
+<li>Edit and write websites and courses in <a
+href="https://rmarkdown.rstudio.com/">R Markdown files</a> (or Quarto -
+coming soon!)</li>
+<li>Use GitHub to host your content, we will walk you through how!</li>
+<li>Let the GitHub actions in our tools do all the checks and rendering
+so you don’t have too</li>
+<li>Update your content as needed based on the errors OTTR finds and the
+preview</li>
+<li>Publish your websites and courses! <br></li>
 </ol>
-<p>Click on each tab to learn more.</p>
+</div>
+<div id="how-to-cite-ottr" class="section level2">
+<h2>How to Cite OTTR:</h2>
+<p>Please cite our <a
+href="https://www.tandfonline.com/doi/full/10.1080/26939169.2022.2118646">OTTR
+manuscript here!</a>📝👀</p>
+<details>
+<summary>
+Click here for the BibTeX formatted citation
+</summary>
+<pre><code>@article{ottr,
+  author = {Candace Savonen, Carrie Wright, Ava M. Hoffman, John Muschelli,    Katherine Cox, Frederick J. Tan and Jeffrey T. Leek},
+  title = {Open-source Tools for Training Resources – OTTR},
+  journal = {Journal of Statistics and Data Science Education},
+  volume = {31},
+  number = {1},
+  pages = {57-65},
+  year = {2023},
+  publisher = {Taylor &amp; Francis},
+  doi = {10.1080/26939169.2022.2118646},
+  URL = {https://doi.org/10.1080/26939169.2022.2118646},
+  eprint = {https://doi.org/10.1080/26939169.2022.2118646}
+}</code></pre>
+</details>
+<p><br></p>
+<center>
+<a href="https://ottrproject.org/getting_started.html">
+<img src="resources/images/getstarted.png" width = 30%> </a>
+</center>
+<p><br></p>
 </div>
 
+<hr>
+
+<center>
+  <script async src="https://cse.google.com/cse.js?cx=22c03a049bf7a472a">
+</script>
+<div class="gcse-searchbox-only"></div>
+  <img src="resources/images/basic_otter_circle.PNG" width=120>
+  <br>
+  Your feedback is greatly appreciated! You can fill out <a href="https://forms.gle/jvFjnhqt5V1E9LbQ9">this form </a>
+  <br>
+  or <a href="https://github.com/ottrproject/OTTR_Template/issues/new/choose">file a GitHub issue</a>.
+    <br>
+  <br><font size="1">Otter images by <a href = https://www.linkedin.com/in/jimin-hwang-549835142/>Jimin Hwang</a>.</font>
+  <br>
+</div>
+</center>
 
 
 
