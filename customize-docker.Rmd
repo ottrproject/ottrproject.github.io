@@ -14,7 +14,7 @@ If your course doesn't require any additional packages to run, then you do not n
 
 We recommend using the `jhudsl/base_ottr:main` tagged image instead of the `latest` version. The `main` image is ready for use, while the `latest` may be under development. All GitHub Actions by default use the `jhudsl/base_ottr:main`.
 
-If you are new to Docker, you may find it helpful to read this [introduction to Docker](https://ottrproject.org/Adv_Reproducibility_in_Cancer_Informatics/launching-a-docker-image.html).
+If you are new to Docker, you may find it helpful to read this [introduction to Docker](https://jhudatascience.org/Adv_Reproducibility_in_Cancer_Informatics/launching-a-docker-image.html).
 
 - If you don't have one, you will need to [sign up with a Docker account](https://hub.docker.com/).  
 - If you haven't installed Docker desktop (or need to update it), you can do so [here](https://docs.docker.com/get-docker/).  
