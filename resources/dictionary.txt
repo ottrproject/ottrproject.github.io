@@ -1,6 +1,7 @@
-img	
+img
 nav
 TBD
+coursera
 Calendly
 Customizable
 metricminer
@@ -16,11 +17,11 @@ custimization
 cwrigh
 Coursera
 Coursera's
-img 
+img
 src
 jpg
 px
-nav 
+nav
 JSDSE
 Endnote
 Markua
@@ -58,6 +59,7 @@ DOI
 docx
 dropdown
 EndNote
+frontmatter
 fy
 fying
 favicon
