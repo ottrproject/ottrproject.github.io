@@ -44,7 +44,7 @@ This is a template (made from our main OTTR Template) that is used for a set of 
 
 - [GitHub repository and source code](https://github.com/jhudsl/AnVIL_Template)  
 
-Courses will look similar to this [link](https://ottrproject.org/AnVIL_Template/).
+Courses will look similar to this [link](https://jhudatascience.org/AnVIL_Template/).
 
 ## DataTrail template
 
