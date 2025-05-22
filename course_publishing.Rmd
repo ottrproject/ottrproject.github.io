@@ -95,7 +95,7 @@ If you encounter issues with the `ottrpal` package, please file an issue in its 
 
 ## Hosting your course on Leanpub
 
-_Finalizing your course on Leanpub can be tricky_. We have created a course, [Using Leanpub](https://ottrproject.org/Using_Leanpub/index.html), to help guide you.
+_Finalizing your course on Leanpub can be tricky_. We have created a course, [Using Leanpub](https://hutchdatascience.org/Using_Leanpub/index.html), to help guide you.
 
 To host your course on Leanpub, follow these steps:  
 
