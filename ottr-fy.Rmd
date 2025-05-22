@@ -21,11 +21,11 @@ This set of steps also assumes you are more familiar with GitHub.
 
 ### Step 1: Add OTTR files to your current repository
 
-Navigate to the top of your repository and [download this file](https://github.com/ottrproject/ottr-reports/blob/main/scripts/ottr-fy.R).
+Navigate to the top of your repository and [download this file](https://github.com/ottrproject/ottrpal/blob/main/R/ottrfy.R).
 
 You can do this by using wget, or by just using the link above and saving it as `ottr-fy.R` in the top of your repository.
 ```
-wget 'https://github.com/ottrproject/ottr-reports/blob/main/scripts/ottr-fy.R'
+wget 'https://github.com/ottrproject/ottrpal/blob/main/R/ottrfy.R'
 ```
 
 You've downloaded a script that will download the necessary files to run OTTR in your repository. Take a look at the filenames of what will be downloaded to make sure that you won't accidentally overwrite any of your repository's existing files.
