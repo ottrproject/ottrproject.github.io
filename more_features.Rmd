@@ -127,7 +127,7 @@ Additionally, this row should be added for _all ITCR Courses_:
 
 ### Adding the Credits table to Coursera
 
-In Coursera, you can add the credits table URL as an ungraded plugin ([the same as described here for adding chapter content](https://github.com/ottrproject/OTTR_Template/wiki/Publishing-on-Coursera#navigating-to-your-course-on-coursera)). This should be added at the beginning of your course, right after the introduction.
+In Coursera, you can add the credits table URL as an ungraded plugin ([the same as described here for adding chapter content](https://www.ottrproject.org/course_publishing.html#Navigating_to_your_course_on_Coursera)). This should be added at the beginning of your course, right after the introduction.
 
 ### Adding the Credits table to Leanpub
 
