@@ -369,7 +369,7 @@ to your branch.
 You can adjust what checks are run by editing the
 `config_automation.yml` file. This is further discussed in this section
 about [the GitHub
-Actions](https://github.com/ottrproject/OTTR_Template/wiki/How-to-set-up-and-customize-GitHub-actions-robots).
+Actions](https://www.ottrproject.org/customize-robots.html).
 
 If you need more information on failed GitHub actions you can scroll to
 the bottom of your pull request where the status of the checks are shown
@@ -597,7 +597,7 @@ course material.
 If you want to include a file that is not hosted online, consider
 hosting it on GitHub using the method described for hosting your
 Bookdown version of the course. See the [Set up GitHub
-pages](https://github.com/ottrproject/OTTR_Template/wiki/Starting-a-new-course-with-this-template#set-up-github-pages)
+pages](https://www.ottrproject.org/getting_started.html#7_Set_up_GitHub_Pages)
 section.
 
 Then you would do the following, where the url is that of your hosted

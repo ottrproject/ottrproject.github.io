@@ -367,7 +367,7 @@ to your branch.
 You can adjust what checks are run by editing the
 `config_automation.yml` file. This is further discussed in this section
 about [the GitHub
-Actions](https://github.com/ottrproject/OTTR_Template/wiki/How-to-set-up-and-customize-GitHub-actions-robots).
+Actions](https://www.ottrproject.org/customize-robots.html).
 
 If you need more information on failed GitHub actions you can scroll to
 the bottom of your pull request where the status of the checks are shown
