@@ -70,7 +70,7 @@ Note that if you wish to keep your quizzes and their answers hidden, there is so
 
 ## Leanpub Rendering
 
-The `ottrpal` package can handle most of the formatting tasks for links and other elements for you, as long as you have followed the formatting instructions provided in the `Setting up images` section of [this Wiki](https://github.com/ottrproject/OTTR_Template/wiki/Setting-up-images-and-graphics).
+The `ottrpal` package can handle most of the formatting tasks for links and other elements for you, as long as you have followed the [formatting instructions provided in the `Set up images` section](https://www.ottrproject.org/writing_content_courses.html#set-up-images).
 
 Github Actions in this repository will attempt to convert Bookdown to Leanpub for you by running `ottrpal::bookdown_to_leanpub()` function at the top of the repository.
 
