@@ -106,7 +106,7 @@ render-preview: true
 ```
 After you open a pull request, a preview of the renders will be linked in an automatic comment on the pull request. Upon each commit these previews will re-render and edit the comment with the latest render.
 
-![](https://raw.githubusercontent.com/ottrproject/ottrproject.github.io/main/resources/screenshots/preview_comment.png)
+![](https://raw.githubusercontent.com/ottrproject/ottrproject.github.io/kweav-actionsDocsUpdate/resources/screenshots/preview_comment.png)
 
 These Github Actions are located in `render-preview` section of the `pull-request.yml`.
 These previews do NOT incorporate any changes influenced by any changes to the Docker image if the Dockerfile is also updated in the same pull request.
@@ -136,12 +136,12 @@ After committing the changes to `resources/dictionary.txt` on your branch, the s
 
 The PR comment included below shows an example of a check that passed (spell check), and a check that failed (the URL check) with the option to download detailed error report(s).
 
-![](https://raw.githubusercontent.com/ottrproject/ottrproject.github.io/main/resources/screenshots/check_results.png)
+![](https://raw.githubusercontent.com/ottrproject/ottrproject.github.io/kweav-actionsDocsUpdate/resources/screenshots/check_results.png)
 
 When all checks pass, the option to download error reports is no longer included, instead displaying a message that the URL and spell checks passed.
 
 ![]
-(https://raw.githubusercontent.com/ottrproject/ottrproject.github.io/main/resources/screenshots/check_results_pass.png)
+(https://raw.githubusercontent.com/ottrproject/ottrproject.github.io/kweav-actionsDocsUpdate/resources/screenshots/check_results_pass.png)
 
 ### Style code
 
@@ -166,8 +166,8 @@ This is only relevant if you have [your own Docker image you are managing for yo
 
 Upon merging changes to any `Rmd` or `assets/` folder to `main`, the course material will be automatically re-rendered.
 
-For rendering a website version of the course (or your website), rather than `true` or `false`, the options are `rmd`, `rmd_web`, `quarto` or `quarto_web`. 
-  
+For rendering a website version of the course (or your website), rather than `true` or `false`, the options are `rmd`, `rmd_web`, `quarto` or `quarto_web`.
+
   * If rendering a course with rmarkdown files, use `rmd`.
   * If rendering a course with quarto files, use `quarto`.
   * If rendering a website with rmarkdown files, use `rmd_web`.
