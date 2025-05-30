@@ -1,0 +1,1 @@
+Adding a placeholder file within the assets directory
