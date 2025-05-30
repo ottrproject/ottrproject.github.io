@@ -140,8 +140,7 @@ The PR comment included below shows an example of a check that passed (spell che
 
 When all checks pass, the option to download error reports is no longer included, instead displaying a message that the URL and spell checks passed.
 
-![]
-(https://raw.githubusercontent.com/ottrproject/ottrproject.github.io/kweav-actionsDocsUpdate/resources/screenshots/check_results_pass.png)
+![](https://raw.githubusercontent.com/ottrproject/ottrproject.github.io/kweav-actionsDocsUpdate/resources/screenshots/check_results_pass.png)
 
 ### Style code
 
