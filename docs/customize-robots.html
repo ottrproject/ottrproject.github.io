@@ -439,7 +439,7 @@ div.tocify {
       <a href="course_publishing.html#publishing-with-leanpub">Publishing with Leanpub</a>
     </li>
     <li>
-      <a href="course_publishinghtml#publishing-with-coursera">Publishing with Coursera</a>
+      <a href="course_publishing.html#publishing-with-coursera">Publishing with Coursera</a>
     </li>
   </ul>
 </li>
@@ -590,7 +590,7 @@ are set up in the file:
 <p>In the <code>config_automation.yml</code> file it is set by:</p>
 <pre><code>check-quizzes: no</code></pre>
 <p>By default, it is set to <code>no</code>. But if you wish to <a
-href="https://github.com/ottrproject/OTTR_Template/wiki/Publishing-on-Leanpub">create
+href="https://www.ottrproject.org/course_publishing.html#publishing-with-leanpub">create
 quizzes on Leanpub</a>, you should set this to <code>yes</code>. This is
 not necessary if you only want quizzes for Coursera. Leanpub needs a
 particular format for it to upload correctly. This action will look for
@@ -676,14 +676,14 @@ changes will automatically be committed back to your branch.</p>
 <p>By default it is set to <code>no</code> which means it won’t run
 automatically unless you change this to <code>yes</code>. This is only
 relevant if you have <a
-href="https://github.com/ottrproject/OTTR_Template/wiki/Using-Docker#starting-a-new-docker-image">your
-own Docker image you are managing for your course</a>. If changes are
-made to Docker-relevant files: <code>Dockerfile</code>,
+href="https://www.ottrproject.org/customize-docker.html">your own Docker
+image you are managing for your course</a>. If changes are made to
+Docker-relevant files: <code>Dockerfile</code>,
 <code>install_github.R</code>, or <code>github_package_list.tsv</code>,
 this will test re-build the Docker image. If it is successfully built,
 then it makes sense to merge it to <code>main</code> but the Docker
 Image will not be pushed to <code>Dockerhub</code> automatically. <a
-href="https://github.com/ottrproject/OTTR_Template/wiki/Using-Docker#pushing-the-docker-image">Follow
+href="https://www.ottrproject.org/customize-docker.html#Testing_a_modified_Docker_image">Follow
 these instructions to push your Docker image to Dockerhub</a>.</p>
 <p><br></p>
 </div>
@@ -702,11 +702,11 @@ render-coursera: yes</code></pre>
 <p>For publishing to Leanpub, make sure that the render Leanpub option
 is set to yes: <code>render-leanpub: yes</code>. See more details about
 publishing to Leanpub <a
-href="https://github.com/ottrproject/OTTR_Template/wiki/Publishing-on-Leanpub">here</a>.</p>
+href="https://www.ottrproject.org/course_publishing.html#publishing-with-leanpub">here</a>.</p>
 <p>For publishing to Coursera, make sure render Coursera option is set
 to yes: <code>render-coursera: yes</code>. See more details about
 publishing to Coursera <a
-href="https://github.com/ottrproject/OTTR_Template/wiki/Publishing-on-Coursera">here</a>.</p>
+href="https://www.ottrproject.org/course_publishing.html#publishing-with-coursera">here</a>.</p>
 <p><br></p>
 </div>
 <div id="manually-running-rendering-or-checks" class="section level2">

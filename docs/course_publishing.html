@@ -439,7 +439,7 @@ div.tocify {
       <a href="course_publishing.html#publishing-with-leanpub">Publishing with Leanpub</a>
     </li>
     <li>
-      <a href="course_publishinghtml#publishing-with-coursera">Publishing with Coursera</a>
+      <a href="course_publishing.html#publishing-with-coursera">Publishing with Coursera</a>
     </li>
   </ul>
 </li>
@@ -550,8 +550,8 @@ div.tocify {
 
 
 <p>Below are some examples of courses created using the <a
-href="https://github.com/ottrproject/OTTR_Template">OTTR Template</a> and
-published on three platforms: Bookdown, Leanpub and Coursera.</p>
+href="https://github.com/ottrproject/OTTR_Template">OTTR Template</a>
+and published on three platforms: Bookdown, Leanpub and Coursera.</p>
 <p><em>Introduction to Reproducibility in Cancer Informatics:</em></p>
 <ul>
 <li><a
@@ -559,7 +559,7 @@ href="https://github.com/jhudsl/Reproducibility_in_Cancer_Informatics">GitHub
 repository and source code</a>
 <ul>
 <li><a
-href="https://ottrproject.org/Reproducibility_in_Cancer_Informatics/introduction.html">Bookdown
+href="https://jhudatascience.org/Reproducibility_in_Cancer_Informatics/introduction.html">Bookdown
 website</a><br />
 </li>
 <li><a
@@ -578,7 +578,7 @@ href="https://github.com/jhudsl/Computing_for_Cancer_Informatics">GitHub
 repository and source code</a>
 <ul>
 <li><a
-href="https://ottrproject.org/Computing_for_Cancer_Informatics/">Bookdown
+href="https://jhudatascience.org/Computing_for_Cancer_Informatics/">Bookdown
 website</a><br />
 </li>
 <li><a
@@ -594,7 +594,7 @@ course</a></li>
 <h1>Publishing with Bookdown</h1>
 <p>To publish your content using Bookdown, you can utilize Github Pages
 by following the repository setup instructions provided <a
-href="https://github.com/ottrproject/OTTR_Template/wiki/Starting-a-new-course-with-this-template#set-up-github-pages">here</a>.
+href="https://www.ottrproject.org/getting_started.html#7_Set_up_GitHub_Pages">here</a>.
 It’s important to note that Bookdown serves as a fundamental component
 for utilizing other publishing platforms such as Coursera or Leanpub.
 Therefore, if you intend to use Coursera or Leanpub, you will need to
@@ -648,17 +648,16 @@ the <code>ottrpal</code> package and should not be edited.</p>
 there is some additional setup involved with this process and you will
 need to create a separate private OTTR_Quizzes repository to store these
 quizzes. Start with <a
-href="https://github.com/ottrproject/OTTR_Template/wiki/Making-quizzes-private">these
+href="https://www.ottrproject.org/course_publishing.html#Setting_up_the__Quizzes_repository_checklist:">these
 instructions</a> first if you want your quizzes and answers to be
 hidden.</p>
 <div id="leanpub-rendering" class="section level2">
 <h2>Leanpub Rendering</h2>
 <p>The <code>ottrpal</code> package can handle most of the formatting
 tasks for links and other elements for you, as long as you have followed
-the formatting instructions provided in the
-<code>Setting up images</code> section of <a
-href="https://github.com/ottrproject/OTTR_Template/wiki/Setting-up-images-and-graphics">this
-Wiki</a>.</p>
+the <a
+href="https://www.ottrproject.org/writing_content_courses.html#set-up-images">formatting
+instructions provided in the <code>Set up images</code> section</a>.</p>
 <p>Github Actions in this repository will attempt to convert Bookdown to
 Leanpub for you by running <code>ottrpal::bookdown_to_leanpub()</code>
 function at the top of the repository.</p>
@@ -669,7 +668,7 @@ class="section level3">
 turn on a few Github Actions that are included in the template but by
 default, turned off.</p>
 <p>In your <a
-href="https://github.com/ottrproject/OTTR_Template/wiki/How-to-set-up-and-customize-GitHub-actions-robots">config_automation.yml
+href="https://www.ottrproject.org/customize-robots.html">config_automation.yml
 file</a>, you will need to turn on two Actions in particular:</p>
 <ul>
 <li><code>render-leanpub: yes</code></li>
@@ -706,7 +705,7 @@ repository</a>.</p>
 <h2>Hosting your course on Leanpub</h2>
 <p><em>Finalizing your course on Leanpub can be tricky</em>. We have
 created a course, <a
-href="https://ottrproject.org/Using_Leanpub/index.html">Using
+href="https://hutchdatascience.org/Using_Leanpub/index.html">Using
 Leanpub</a>, to help guide you.</p>
 <p>To host your course on Leanpub, follow these steps:</p>
 <ol style="list-style-type: decimal">
@@ -753,7 +752,7 @@ GitHub and Leanpub communicating.</p>
 <h2>Setting up quizzes</h2>
 <p>Quizzes need to be stored in the <code>quizzes/</code> directory.
 Edit and add quizzes to this directory. See and copy this <a
-href="https://github.com/jhudsl/OTTR_Quizzes/blob/main/quizzes/quiz_ch1.md">template
+href="https://github.com/ottrproject/OTTR_Quizzes/blob/main/quizzes/quiz_ch1.md">template
 quiz</a> to get started. All quizzes need to be written in the Markua
 format. Refer to their <a
 href="https://leanpub.com/markua/read#leanpub-auto-quizzes-and-exercises">documentation</a>
@@ -783,7 +782,7 @@ of the name in the <code>Book.txt</code> file will be ignored by
 Leanpub. We have included an example of this in the
 <code>Book.txt</code> file.</p>
 <p>See an <a
-href="https://github.com/jhudsl/OTTR_Quizzes/blob/main/quizzes/quiz_ch1.md">example
+href="https://github.com/ottrproject/OTTR_Quizzes/blob/main/quizzes/quiz_ch1.md">example
 quiz here</a> Note that you cannot have two quizzes with the same
 <code>quiz_id</code>.</p>
 <div id="leanpub-quizzes" class="section level3">
@@ -857,7 +856,7 @@ recognized by Leanpub.</li>
 class="section level2">
 <h2>Converting Quizzes from Leanpub to Coursera format</h2>
 <p><a
-href="https://github.com/ottrproject/OTTR_Template/wiki/Publishing-on-Courseraa">See
+href="https://www.ottrproject.org/course_publishing.html#publishing-with-coursera">See
 more instructions on how to port a course made from these templates to
 Coursera</a>.</p>
 <p>You can convert your quizzes to a nicely upload-able yaml file in
@@ -881,7 +880,7 @@ class="section level2">
 <h2>Setting up the _Quizzes repository checklist:</h2>
 <ul class="task-list">
 <li><p><input type="checkbox" />A <a
-href="https://github.com/ottrproject/OTTR_Template/wiki/Setting-up-GitHub-secrets"><code>GH_PAT</code>
+href="https://www.ottrproject.org/getting_started.html#6_Set_up_your_GitHub_personal_access_token"><code>GH_PAT</code>
 has been set in the main Template and the <code>_Quizzes</code>
 repository if you are using a separate <code>_Quizzes</code>
 repository</a>.</p></li>
@@ -911,7 +910,7 @@ checked.</li>
 </ul></li>
 </ul></li>
 <li><p><input type="checkbox" />This repo has been enrolled in <a
-href="https://github.com/ottrproject/OTTR_Template/wiki/Receiving-template-updates">automatic
+href="https://www.ottrproject.org/getting_started.html#8_Enroll_your_repository_for_OTTR_updates_(Not_required_but_highly_encouraged)">automatic
 updates from the original template</a>.</p></li>
 <li><p><input type="checkbox" />Your Book.txt file is up to
 date.</p></li>
@@ -1093,7 +1092,7 @@ src="https://raw.githubusercontent.com/ottrproject/OTTR_Template/main/resources/
 <p>It will let you know if there are any problems uploading the quiz. If
 the <code>coursera_quiz_conversion.R</code> script failed to render
 something properly, please <a
-href="https://github.com/jhudsl/OTTR_Quizzes/issues">file an issue
+href="https://github.com/ottrproject/OTTR_Quizzes/issues">file an issue
 here</a> describing how it failed and including a file that shows the
 instance it failed to convert.</p>
 <p>Note that images and links are not currently supported in that
