@@ -120,7 +120,7 @@ spell-check: true
 ```
 Github Actions will automatically run a spell check on all Rmds and mds whenever a pull request to the `main` branch is filed.
 
-The error threshold option controls how many errors are allowed before the check will fail.
+Just like the URL error threshold, the spelling error thershold option controls how many errors are allowed before the check will fail.
 
 ```
 spell_error_min: 0
