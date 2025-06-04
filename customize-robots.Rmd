@@ -134,7 +134,7 @@ If it's a 'word' the spell check should recognize, you'll need to add this to th
 Go to the `resources/dictionary.txt` file. Open the file and add the new 'word' to its appropriate place (the words are in alphabetical order).
 After committing the changes to `resources/dictionary.txt` on your branch, the spell check status check should be successfully passed.
 
-The PR comment included below shows an example of a check that passed (spell check), and a check that failed (the URL check) with the option to download detailed error report(s).
+The pull request comment included below shows an example of a check that passed (spell check), and a check that failed (the URL check) with the option to download detailed error report(s).
 
 ![](https://raw.githubusercontent.com/ottrproject/ottrproject.github.io/kweav-actionsDocsUpdate/resources/screenshots/check_results.png)
 
