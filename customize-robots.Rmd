@@ -85,7 +85,7 @@ url-checker: true
 GitHub Actions runs a check on all the URLs upon creating a pull request to the `main` branch.
 If it fails, you can click on the output comment on your pull request that says "Click here to download detailed error reports". This will download a zip file containing a list of the broken URLs it found.
 
-If you don't set the additional error threshold option in the config_automation file, the check summary may still report that the URL check failed, even if 0 errors were found.
+It is necessary to set the error threshold in the config_automation file (see below); otherwise, the check summary may still report that the URL check failed, even if no errors were found. The error threshold controls how many errors are allowed before the check will fail.
 
 ```
 url_error_min: 0
