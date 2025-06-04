@@ -177,7 +177,7 @@ A course has chapters like a book, whereas a website version will appear more li
 ```
 render-website: rmd
 ```
-
+### Rendering options for courses
 By default, all rendering steps will be run. But depending on the needs of your course, you can turn these on and off by going to the `config_automation.yml` file and switching options to `true` or `false`.
 
 ```
