@@ -170,7 +170,7 @@ For rendering a website version of the course (or your website), rather than `tr
   * If rendering a course with [R Markdown files](https://rmarkdown.rstudio.com/), use `rmd`.
   * If rendering a course with [quarto files](https://quarto.org/), use `quarto`.
   * If rendering a website with [R Markdown files](https://rmarkdown.rstudio.com/), use `rmd_web`.
-  * If rendering a website with quarto files, use `quarto_web`.
+  * If rendering a website with [quarto files](https://quarto.org/), use `quarto_web`.
 
 ```
 render-website: rmd
