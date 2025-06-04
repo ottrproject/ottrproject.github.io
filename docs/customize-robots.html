@@ -634,9 +634,10 @@ request to the <code>main</code> branch. If it fails, you can click on
 the output comment on your pull request that says “Click here to
 download detailed error reports”. This will download a zip file
 containing a list of the broken URLs it found.</p>
-<p>If you don’t set the additional error threshold option in the
-config_automation file, the check summary may still report that the URL
-check failed, even if 0 errors were found.</p>
+<p>It is necessary to set the error threshold in the config_automation
+file (see below); otherwise, the check summary may still report that the
+URL check failed, even if no errors were found. The error threshold
+controls how many errors are allowed before the check will fail.</p>
 <pre><code>url_error_min: 0</code></pre>
 <ol start="2" style="list-style-type: decimal">
 <li>The other URL check runs on a set interval to see if any URLs
@@ -672,14 +673,15 @@ the Dockerfile is also updated in the same pull request.</p>
 <p>Github Actions will automatically run a spell check on all Rmds and
 mds whenever a pull request to the <code>main</code> branch is
 filed.</p>
-<p>The error threshold option controls how many errors are allowed
-before the check will fail.</p>
+<p>Just like the URL error threshold, the spelling error threshold
+option controls how many errors are allowed before the check will
+fail.</p>
 <pre><code>spell_error_min: 0</code></pre>
 <p>You’ll need to resolve those before being able to merge your pull
-request. Errors are displayed in much the same way as PR URL check
-errors with a summary of how many errors are found. Click on the output
-comment on your pull request that says “Click here to download detailed
-error reports”. This will download a zip file containing a list of the
+request. Errors are displayed in much the same way as URL check errors
+with a summary of how many errors are found. Click on the output comment
+on your pull request that says “Click here to download detailed error
+reports”. This will download a zip file containing a list of the
 spelling errors it found.</p>
 <p>Some of these errors may be things that the spell check doesn’t
 recognize for example: <code>ITCR</code> or <code>DaSL</code>. If it’s a
@@ -690,9 +692,9 @@ and add the new ‘word’ to its appropriate place (the words are in
 alphabetical order). After committing the changes to
 <code>resources/dictionary.txt</code> on your branch, the spell check
 status check should be successfully passed.</p>
-<p>The PR comment included below shows an example of a check that passed
-(spell check), and a check that failed (the URL check) with the option
-to download detailed error report(s).</p>
+<p>The pull request comment included below shows an example of a check
+that passed (spell check), and a check that failed (the URL check) with
+the option to download detailed error report(s).</p>
 <p><img
 src="https://raw.githubusercontent.com/ottrproject/ottrproject.github.io/kweav-actionsDocsUpdate/resources/screenshots/check_results.png" /></p>
 <p>When all checks pass, the option to download error reports is no
@@ -736,17 +738,23 @@ re-rendered.</p>
 rather than <code>true</code> or <code>false</code>, the options are
 <code>rmd</code>, <code>rmd_web</code>, <code>quarto</code> or
 <code>quarto_web</code>.</p>
+<p>A course has chapters like a book, whereas a website version will
+appear more like a typical website.</p>
 <ul>
-<li>If rendering a course with rmarkdown files, use
+<li>If rendering a course with <a
+href="https://rmarkdown.rstudio.com/">R Markdown files</a>, use
 <code>rmd</code>.</li>
-<li>If rendering a course with quarto files, use
-<code>quarto</code>.</li>
-<li>If rendering a website with rmarkdown files, use
+<li>If rendering a course with <a href="https://quarto.org/">quarto
+files</a>, use <code>quarto</code>.</li>
+<li>If rendering a website with <a
+href="https://rmarkdown.rstudio.com/">R Markdown files</a>, use
 <code>rmd_web</code>.</li>
-<li>If rendering a website with quarto files, use
-<code>quarto_web</code>.</li>
+<li>If rendering a website with <a href="https://quarto.org/">quarto
+files</a>, use <code>quarto_web</code>.</li>
 </ul>
 <pre><code>render-website: rmd</code></pre>
+<div id="rendering-options-for-courses" class="section level3">
+<h3>Rendering options for courses</h3>
 <p>By default, all rendering steps will be run. But depending on the
 needs of your course, you can turn these on and off by going to the
 <code>config_automation.yml</code> file and switching options to
@@ -778,6 +786,7 @@ to true: <code>render-coursera: true</code>. See more details about
 publishing to Coursera <a
 href="https://www.ottrproject.org/course_publishing.html#publishing-with-coursera">here</a>.</p>
 <p><br></p>
+</div>
 </div>
 <div id="manually-running-rendering-or-checks" class="section level2">
 <h2>Manually running rendering or checks</h2>
