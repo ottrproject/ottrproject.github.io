@@ -126,7 +126,7 @@ Just like the URL error threshold, the spelling error threshold option controls 
 spell_error_min: 0
 ```
 
-You'll need to resolve those before being able to merge your pull request. Errors are displayed in much the same way as URL check errors with a summary of how many errors are found. Click on the output comment on your pull request that says "Click here to download detailed error reports". This will download a zip file containing a list of the spelling errors it found.
+In order to manage the accumulation of errors, we recommend resolving those or adjusting the threshold/allowable limit before merging your pull request. Errors are displayed in much the same way as URL check errors with a summary of how many errors are found. Click on the output comment on your pull request that says "Click here to download detailed error reports". This will download a zip file containing a list of the spelling errors it found.
 
 Some of these errors may be things that the spell check doesn't recognize for example: `ITCR` or `DaSL`.
 If it's a 'word' the spell check should recognize, you'll need to add this to the dictionary.
