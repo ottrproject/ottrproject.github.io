@@ -54,7 +54,7 @@ navbar:
       - text: "Publishing with Leanpub"
         href: course_publishing.html#publishing-with-leanpub
       - text: "Publishing with Coursera"
-        href: course_publishinghtml#publishing-with-coursera
+        href: course_publishing.html#publishing-with-coursera
   - text: "About"
     icon:
     menu:
@@ -91,7 +91,7 @@ navbar:
     href: faqs.html
     icon: fa-handshake
   - text: ""
-    href: https://github.com/jhudsl/OTTR_Template
+    href: https://github.com/ottrproject/OTTR_Template
     icon: fa-github
 
 output:

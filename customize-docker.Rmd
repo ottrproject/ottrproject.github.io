@@ -111,7 +111,7 @@ To make sure that your new Docker image is being used for rendering in the GitHu
 
 Then start a new branch so that you can submit a new pull request with your changes.
 
-Now, when you file a pull request, the Dockerfile build for your docker image will be tested automatically by the [GitHub actions](https://github.com/jhudsl/OTTR_Template/wiki/How-to-set-up-and-customize-GitHub-actions-robots) if `docker-test` is set to `yes`. The default is `docker-test: no`
+Now, when you file a pull request, the Dockerfile build for your docker image will be tested automatically by the [GitHub actions](https://www.ottrproject.org/customize-robots.html) if `docker-test` is set to `yes`. The default is `docker-test: no`
 
 ### Modifying the Dockerfile for a new image
 
@@ -123,7 +123,7 @@ You will probably want to create your Docker image by using the `jhudsl/base_ott
 FROM jhudsl/base_ottr:main
 ```
 
-You can take a look at this [Dockerfile template we've set up here](https://github.com/jhudsl/OTTR_Template/blob/main/resources/TEMPLATE_Dockerfile) (note that the commands would need to be uncommented and real package names put in place of `package_name`'s).
+You can take a look at this [Dockerfile template we've set up here](https://github.com/ottrproject/OTTR_Template/blob/main/resources/TEMPLATE_Dockerfile) (note that the commands would need to be uncommented and real package names put in place of `package_name`'s).
 
 #### Template commands for adding packages to the Dockerfile
 
@@ -205,7 +205,7 @@ For your personalized docker image, you can store the Dockerfile anywhere. In or
 
 It may be easiest to store it in the OTTR-made repository you are working from.
 
-In whichever repository you choose to store your Dockerfile, its recommended you use a GitHub action to automatically test it when you make changes. You can use our Docker handling [GitHub action here as a starting point](https://github.com/jhudsl/ottr-docker/blob/main/.github/workflows/docker-test.yml).
+In whichever repository you choose to store your Dockerfile, its recommended you use a GitHub action to automatically test it when you make changes. You can use our Docker handling [GitHub action here as a starting point](https://github.com/ottrproject/ottr-docker/blob/main/.github/workflows/pull_request.yml).
 
 You will need to modify this GHA for your own purposes:
 
