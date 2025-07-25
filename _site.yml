@@ -55,7 +55,7 @@ navbar:
         href: course_publishing.html#publishing-with-leanpub
       - text: "Publishing with Coursera"
         href: course_publishing.html#publishing-with-coursera
-  - text: "About"
+  - text: "Customization"
     icon:
     menu:
       - text: "Customizing checks"
