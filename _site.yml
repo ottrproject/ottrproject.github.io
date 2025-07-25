@@ -6,7 +6,7 @@ navbar:
   - text: ""
     href: index.html
     icon: fa-home
-  - text: "Getting Started with OTTR Websites"
+  - text: "Make a Website with OTTR"
     href: editing_website.html
     icon: fa-star
     menu:
@@ -31,7 +31,7 @@ navbar:
       - text: "Giving credits"
         href: more_features.html#giving-credits-to-contributors
         icon: fa-award
-  - text: "Getting Started with OTTR Courses"
+  - text: "Make a Course with OTTR"
     icon: fa-lightbulb
     menu:
       - text: "Prerequisites"
