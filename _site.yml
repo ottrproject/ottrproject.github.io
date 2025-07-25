@@ -92,13 +92,14 @@ navbar:
         icon: glyphicon-sunglasses
       - text: "About OTTR babies"
         href: examples.html
-  - text: "Help"
+  - text: "Troubleshooting"
     href: faqs.html
     icon: fa-handshake
   - text: ""
     href: https://github.com/ottrproject/OTTR_Template
     icon: fa-github
-
+  - text: "Contact"
+    href: contact.html
 output:
   html_document:
     css: style.css
