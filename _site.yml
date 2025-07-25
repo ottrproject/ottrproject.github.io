@@ -25,6 +25,12 @@ navbar:
       - text: "Adding new pages"
         href: editing_website.html#adding-new-pages
         icon: fa-plus
+      - text: "Citing sources"
+        href: more_features.html#citing-sources
+        icon: fa-quote-left
+      - text: "Giving credits"
+        href: more_features.html#giving-credits-to-contributors
+        icon: fa-award
   - text: "Getting Started with OTTR Courses"
     icon: fa-lightbulb
     menu:
@@ -46,6 +52,12 @@ navbar:
       - text: "Adding new pages"
         href: writing_content_courses.html#adding-new-pages
         icon: fa-plus
+      - text: "Citing sources"
+        href: more_features.html#citing-sources
+        icon: fa-quote-left
+      - text: "Giving credits"
+        href: more_features.html#giving-credits-to-contributors
+        icon: fa-award
       - text: "Choosing course publishing platforms"
         href: course_publishing.html#choosing-publishing-platforms
         icon: fa-tasks
@@ -56,7 +68,6 @@ navbar:
       - text: "Publishing with Coursera"
         href: course_publishing.html#publishing-with-coursera
   - text: "Customization"
-    icon:
     menu:
       - text: "Customizing checks"
         href: customize-robots.html
@@ -67,12 +78,6 @@ navbar:
       - text: "Customizing Docker"
         href: customize-docker.html
         icon: fa-gears
-      - text: "Citing sources"
-        href: more_features.html#citing-sources
-        icon: fa-quote-left
-      - text: "Giving credits"
-        href: more_features.html#giving-credits-to-contributors
-        icon: fa-award
       - text: "Borrowing chapters"
         href: more_features.html#borrowing-chapters
         icon: fa-bookmark
