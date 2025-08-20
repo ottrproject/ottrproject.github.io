@@ -6,7 +6,7 @@ navbar:
   - text: ""
     href: index.html
     icon: fa-home
-  - text: "Getting Started with OTTR Websites"
+  - text: "Make a Website with OTTR"
     href: editing_website.html
     icon: fa-star
     menu:
@@ -25,7 +25,13 @@ navbar:
       - text: "Adding new pages"
         href: editing_website.html#adding-new-pages
         icon: fa-plus
-  - text: "Getting Started with OTTR Courses"
+      - text: "Citing sources"
+        href: more_features.html#citing-sources
+        icon: fa-quote-left
+      - text: "Giving credits"
+        href: more_features.html#giving-credits-to-contributors
+        icon: fa-award
+  - text: "Make a Course with OTTR"
     icon: fa-lightbulb
     menu:
       - text: "Prerequisites"
@@ -46,6 +52,12 @@ navbar:
       - text: "Adding new pages"
         href: writing_content_courses.html#adding-new-pages
         icon: fa-plus
+      - text: "Citing sources"
+        href: more_features.html#citing-sources
+        icon: fa-quote-left
+      - text: "Giving credits"
+        href: more_features.html#giving-credits-to-contributors
+        icon: fa-award
       - text: "Choosing course publishing platforms"
         href: course_publishing.html#choosing-publishing-platforms
         icon: fa-tasks
@@ -55,8 +67,7 @@ navbar:
         href: course_publishing.html#publishing-with-leanpub
       - text: "Publishing with Coursera"
         href: course_publishing.html#publishing-with-coursera
-  - text: "About"
-    icon:
+  - text: "Customization"
     menu:
       - text: "Customizing checks"
         href: customize-robots.html
@@ -67,12 +78,6 @@ navbar:
       - text: "Customizing Docker"
         href: customize-docker.html
         icon: fa-gears
-      - text: "Citing sources"
-        href: more_features.html#citing-sources
-        icon: fa-quote-left
-      - text: "Giving credits"
-        href: more_features.html#giving-credits-to-contributors
-        icon: fa-award
       - text: "Borrowing chapters"
         href: more_features.html#borrowing-chapters
         icon: fa-bookmark
@@ -87,13 +92,14 @@ navbar:
         icon: glyphicon-sunglasses
       - text: "About OTTR babies"
         href: examples.html
-  - text: "Help"
+  - text: "Troubleshooting"
     href: faqs.html
     icon: fa-handshake
   - text: ""
     href: https://github.com/ottrproject/OTTR_Template
     icon: fa-github
-
+  - text: "Contact"
+    href: contact.html
 output:
   html_document:
     css: style.css
