@@ -540,7 +540,12 @@ bar:
 
 ![](https://raw.githubusercontent.com/ottrproject/OTTR_Template/main/resources/screenshots/slide_url.png)
 
-Additionally, include notes (similar to the fig.alt text) for each slide in the Google Slides presentation, describing the content and images of the slide. This will enable accessibility for individuals with visual impairments, as the notes can be converted into audio. Please note that line breaks are not allowed within the fig.alt text. If there are no line breaks, the text should appear in blue within the code chunk.
+Additionally, include notes (similar to the fig.alt text) for each slide in the Google Slides presentation, describing the content and images of the slide. This will enable accessibility for individuals with visual impairments, as the notes can be converted into audio. 
+
+Please note the following formatting requirements for the fig.alt argument when using `include_slide()`:
+
+* line breaks are not allowed within the fig.alt text. (If there are no line breaks, the text should appear in blue within the code chunk.)
+* If you need to put quotes around a phrase within the fig.alt text, use single quotation marks for that particular phrase and use double quotation marks around the whole of the fig.alt text.
 
 The code chunk option `echo=FALSE` ensures that the R code is hidden from your course,
 while the code chunk option `out.width = "100%"` is used to size the image. We generally
