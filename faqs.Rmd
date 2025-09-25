@@ -50,7 +50,7 @@ Your Google Slides presentation you have tried to retrieve a slide from with `ot
 
 Check the formatting of the code chunk, particularly paying attention to the `fig.alt` argument. Respectively for those issues, make sure there are no linebreaks and that you don't have double quotation marks surrounding a subphrase or word in the `fig.alt` text. 
 
-The *correct way* to put quotation marks within the argument for fig.alt is `fig.alt = "This is an example sentence where I want to bring attention to 'this specific phrase' and not the rest of it."`. Using single quotation marks around the whole thing with double quotation marks inside *won't work* as shown in this example: `fig.alt = 'This is an example sentence where I want to bring attention to "this specific phrase" and not the rest of it.'`
+The *correct way* to put quotation marks within the argument for fig.alt is `fig.alt = "This is an example sentence where I want to bring attention to 'this specific phrase' and not the rest of it."`. Using single quotation marks around the whole argument with double quotation marks inside *won't work* as shown in this example: `fig.alt = 'This is an example sentence where I want to bring attention to "this specific phrase" and not the rest of it.'`
 
 ***
 
