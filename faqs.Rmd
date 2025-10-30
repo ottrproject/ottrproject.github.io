@@ -65,6 +65,7 @@ or
 
 <details><summary>Click for more information</summary>
 Options for correct formatting of quotation marks within the `fig.alt` text argument:
+
 	    - Double quotation marks surrounding the whole argument with double quotation marks around any specific phrases within the argument
 	    - Single quotation marks surround the whole argument with single quotation marks around any specific phrases within the argument
 	    - Double quotation marks surrounding the whole argument with single quotation marks around any specific phrases within the argument (this will also work)
