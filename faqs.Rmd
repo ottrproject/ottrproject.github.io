@@ -53,7 +53,24 @@ Check the formatting of the code chunk, particularly paying attention to the `fi
 Make sure there are: 
 
 - no line breaks
-- no double quotation marks surrounding a subphrase or word in the `fig.alt` text (instead use single quotes)
+- only **one type** of quotation marks used in `fig.alt` (either all single or all double quotes)
+
+Examples:
+
+`fig.alt = "This is an example sentence where I want to bring attention to "this specific phrase" and not the rest of it."` 
+
+or 
+
+`fig.alt = 'This is an example sentence where I want to bring attention to 'this specific phrase' and not the rest of it.'`
+
+<details><summary>Click for more information</summary>
+Options for correct formatting of quotation marks within the `fig.alt` text argument:
+	    - Double quotation marks surrounding the whole argument with double quotation marks around any specific phrases within the argument
+	    - Single quotation marks surround the whole argument with single quotation marks around any specific phrases within the argument
+	    - Double quotation marks surrounding the whole argument with single quotation marks around any specific phrases within the argument (this will also work)
+
+Note: Single quotation marks surrounding the whole argument with double quotation marks around specific phrases within the argument will cause issues that may be not be as obvious at first. It will cause the images to not be properly rendered.
+</details> 
 
 The *correct way* to put quotation marks within the argument for fig.alt is `fig.alt = "This is an example sentence where I want to bring attention to 'this specific phrase' and not the rest of it."`. Using single quotation marks around the whole argument with double quotation marks inside *won't work* as shown in this example: `fig.alt = 'This is an example sentence where I want to bring attention to "this specific phrase" and not the rest of it.'`
 
