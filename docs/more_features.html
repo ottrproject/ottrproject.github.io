@@ -724,9 +724,9 @@ the other as well! 😱</p>
 use <code>cow::borrow_chapter()</code> from the <a
 href="https://jhudatascience.org/cow/index.html">jhudsl/cow</a> package.
 The <code>cow</code> package is already on the
-<code>jhudsl/course_template</code> Docker image so you do not need to
-install it if you are using the Docker image or if you are have GitHub
-Actions do all the rendering for you.</p>
+<code>jhudsl/base_ottr</code> Docker image so you do not need to install
+it if you are using the Docker image or if you are have GitHub Actions
+do all the rendering for you.</p>
 <p>To borrow a chapter from another course, create an <code>.Rmd</code>
 as you normally would, with a
 <code>ottrpal::set_knitr_image_path()</code> in a chunk at the beginning
@@ -758,18 +758,7 @@ locally.</p>
 </div>
 <div id="borrowing-from-a-private-repository" class="section level3">
 <h3>Borrowing from a private repository</h3>
-<p>If you are borrowing from a course in a private repository, you will
-need to supply a <a
-href="https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token">GitHub
-personal access token</a> using a <code>git_pat</code> argument like
-this:</p>
-<p>Have your chunk arguments
-include:<code>{r, echo = FALSE, results='asis'}</code></p>
-<pre><code>cow::borrow_chapter(
-  doc_path = &quot;02-chapter_of_course.Rmd&quot;,
-  repo_name = &quot;jhudsl/Private_Repo&quot;,
-  git_pat = &quot;12345&quot;
-)</code></pre>
+<p>Borrowing from a private repository is not supported.</p>
 </div>
 <div id="removing-an-h1-header" class="section level3">
 <h3>Removing an h1 header</h3>

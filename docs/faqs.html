@@ -615,6 +615,40 @@ up images and graphics section</a> for more details.</p>
 <hr />
 </div>
 <div
+id="you-observe-the-code-for-include_slide-or-img-src...-...-rather-than-the-google-slide-image."
+class="section level3">
+<h3>You observe the code for <code>include_slide()</code> or
+<code>&lt;img src="...", ... &gt;</code> rather than the Google Slide
+image.</h3>
+<p>Check the formatting of the code chunk, particularly paying attention
+to the <code>fig.alt</code> argument.</p>
+<p>Make sure there are:</p>
+<ul>
+<li>no line breaks</li>
+<li>only <strong>one type</strong> of quotation marks used in
+<code>fig.alt</code> (either all single or all double quotes)</li>
+</ul>
+<p>Examples:</p>
+<p><code>fig.alt = "This is an example sentence where I want to bring attention to "this specific phrase" and not the rest of it."</code></p>
+<p>or</p>
+<p><code>fig.alt = 'This is an example sentence where I want to bring attention to 'this specific phrase' and not the rest of it.'</code></p>
+<details>
+<summary>
+Click for more information
+</summary>
+<p>Options for correct formatting of quotation marks within the
+<code>fig.alt</code> text argument:</p>
+<pre><code>    - Double quotation marks surrounding the whole argument with double quotation marks around any specific phrases within the argument
+    - Single quotation marks surround the whole argument with single quotation marks around any specific phrases within the argument
+    - Double quotation marks surrounding the whole argument with single quotation marks around any specific phrases within the argument (this will also work)</code></pre>
+Note: Single quotation marks surrounding the whole argument with double
+quotation marks around specific phrases within the argument will cause
+issues that may be not be as obvious at first. It will cause the images
+to not be properly rendered.
+</details>
+<hr />
+</div>
+<div
 id="process-completed-with-exit-code-1.-spell-checkurl-checkquiz-format-fail"
 class="section level3">
 <h3><code>Process completed with exit code 1.</code>: Spell check/url
