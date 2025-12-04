@@ -17,6 +17,15 @@ Search on the OTTR docs for what you are looking for. Note that first few entrie
 ## Most Common Errors
 
 This guide will describe the most common OTTR errors and pitfalls and how to address them.
+
+### Most Common Errors: Content not rendering or updating as expected.
+
+* Check that the GitHub repository `GH_PAT` is up to date. (An associated GitHub Actions error that suggests the `GH_PAT` needs to be udpated is an `exit code 128`)
+* Check that the config file is up-to-date. It should look like this: https://github.com/ottrproject/OTTR_Template/blob/main/config_automation.yml.
+(be careful to keep your selections for the configuration you would like).
+
+### Most Common Errors: Pull request checks failing
+
 When you open a pull request, you should see a report like this:
 
 ![](https://github.com/ottrproject/OTTR_Template/raw/main/resources/screenshots/gha-actions-error.png)
@@ -25,7 +34,7 @@ When you see an ❌ , click on the `Details` button to see the error message. We
 
 ***
 
-### `file is not in PNG format`: Google Slides permissions fail
+#### `file is not in PNG format`: Google Slides permissions fail
 
 _Error example:_
 ```
@@ -46,7 +55,7 @@ Your Google Slides presentation you have tried to retrieve a slide from with `ot
 
 ***
 
-### You observe the code for `include_slide()` or `<img src="...", ... >` rather than the Google Slide image. 
+#### You observe the code for `include_slide()` or `<img src="...", ... >` rather than the Google Slide image. 
 
 Check the formatting of the code chunk, particularly paying attention to the `fig.alt` argument. 
 
@@ -76,7 +85,7 @@ Note: Single quotation marks surrounding the whole argument with double quotatio
 
 ***
 
-### `Process completed with exit code 1.`: Spell check/url check/quiz format fail:
+#### `Process completed with exit code 1.`: Spell check/url check/quiz format fail:
 
 Underneath a section that says something like: `**Check spelling/url/quiz errors - fail if too many of them**` you may see something like:
 ```
@@ -97,7 +106,7 @@ Click on the `Download the errors here` to see the list of errors and which file
 
 ***
 
-### `CONFLICT (modify/delete)`: Merge conflict fail:
+#### `CONFLICT (modify/delete)`: Merge conflict fail:
 
 _Error example:_
 ```
@@ -113,7 +122,7 @@ This will often happen when render-preview's git handling doesn't know which cha
 
 ***
 
-### `Parser error: while parsing a flow sequence`: _bookdown.yml parse error
+#### `Parser error: while parsing a flow sequence`: _bookdown.yml parse error
 
 If you see an error like this:
 ```
@@ -139,7 +148,7 @@ rmd_files: ["index.Rmd",
 ```
 Commit the changes to your `_bookdown.yml` and see if the preview GitHub action runs appropriately.
 
-### `404 error`: GitHub Action link to download and preview `.docx` file is returning a 404 error
+#### `404 error`: GitHub Action link to download and preview `.docx` file is returning a 404 error
 
 If you get a 404 error after clicking the link while attempting to download the `.docx` file from the GitHub Action rendered previews, then add the following code to the end of the `_output.yml` file:
 
@@ -150,7 +159,7 @@ bookdown::word_document2:
 
 Commit the changes to your `_output.yml` and see if the preview GitHub action runs appropriately.
 
-### `Error in if (title == x2) return(head) : the condition has length > 1`: Run bookdown render error
+#### `Error in if (title == x2) return(head) : the condition has length > 1`: Run bookdown render error
 
 If you observe an error like this:
 
@@ -181,8 +190,4 @@ Then look at the `GA_Script.Rhtml` file and remove the following `html` frontmat
   </body>
   </html>
 ```
-## Content not rendering
-
-Check that the config file is up-to-date. It should look like this: https://github.com/ottrproject/OTTR_Template/blob/main/config_automation.yml.
-(be careful to keep your selections for the configuration you would like).
 
