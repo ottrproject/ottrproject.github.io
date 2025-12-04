@@ -20,7 +20,9 @@ This guide will describe the most common OTTR errors and pitfalls and how to add
 
 ### Most Common Errors: Content not rendering or updating as expected.
 
-* Check that the GitHub repository `GH_PAT` is up to date. (An associated GitHub Actions error that suggests the `GH_PAT` needs to be udpated is an `exit code 128`)
+* Check that the GitHub repository `GH_PAT` is up to date. (An associated GitHub Actions error that suggests the `GH_PAT` needs to be updated is an `exit code 128`)
+     * Use this [cheatsheet on updating your GH_PAT](https://www.ottrproject.org/cheatsheets/ottr_token.html)  if you need help.
+
 * Check that the config file is up-to-date. It should look like this: https://github.com/ottrproject/OTTR_Template/blob/main/config_automation.yml.
 (be careful to keep your selections for the configuration you would like).
 
