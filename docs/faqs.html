@@ -579,47 +579,37 @@ that.</p>
 <div id="most-common-errors" class="section level2">
 <h2>Most Common Errors</h2>
 <p>This guide will describe the most common OTTR errors and pitfalls and
-how to address them. When you open a pull request, you should see a
-report like this:</p>
-<p><img
-src="https://github.com/ottrproject/OTTR_Template/raw/main/resources/screenshots/gha-actions-error.png" /></p>
-<p>When you see an ❌ , click on the <code>Details</code> button to see
-the error message. We’ll discuss the most common error messages
-here.</p>
-<hr />
-<div id="file-is-not-in-png-format-google-slides-permissions-fail"
-class="section level3">
-<h3><code>file is not in PNG format</code>: Google Slides permissions
-fail</h3>
-<p><em>Error example:</em></p>
-<pre><code>Error in png::readPNG(path, native = TRUE, info = TRUE) :
-  file is not in PNG format
-Calls: local ... lapply -&gt; FUN -&gt; raster_dpi_width -&gt; attr -&gt; &lt;Anonymous&gt;
-Execution halted
-Error in Rscript_render(f, render_args, render_meta, add1, add2) :
-  Failed to compile &lt;file_name&gt;.Rmd
-Calls: local ... &lt;Anonymous&gt; -&gt; render_new_session -&gt; Rscript_render
-Execution halted
-Error: bookdown::render_book() failed to render the output format &#39;bookdown::gitbook&#39;.
-Execution halted</code></pre>
-<p><em>What does this mean?:</em></p>
-<p>Your Google Slides presentation you have tried to retrieve a slide
-from with <code>ottrpal::include_slide()</code> is not public. Your
-Google Slide document must be set to <code>Anyone with a link</code>.
-See <a
-href="https://support.wix.com/en/article/setting-permissions-for-google-drive-files-and-folders#:~:text=Settings%20Permissions%20for%20a%20Google,edit%20and%20comment%20as%20well.">this
-article for more details.</a> The renders will fail if this is not set!
-See the <a
-href="https://www.ottrproject.org/writing_content_courses.html#set-up-images">setting
-up images and graphics section</a> for more details.</p>
-<hr />
-</div>
+how to address them.</p>
+<div id="content-not-rendering-or-updating" class="section level3">
+<h3>Content not rendering or updating</h3>
+<p>This may be a quiet error where the content just doesn’t update and
+you are not warned that there is a problem.</p>
+<ul>
+<li><p>Check that the GitHub repository <code>GH_PAT</code> is up to
+date. (An associated GitHub Actions error that suggests the
+<code>GH_PAT</code> needs to be updated is an
+<code>exit code 128</code>)</p>
+<ul>
+<li>Use this <a
+href="https://www.ottrproject.org/cheatsheets/ottr_token.html">cheatsheet
+on updating your GH_PAT</a> if you need help.</li>
+</ul></li>
+<li><p>Check that the config file is up-to-date. It should look like
+this: <a
+href="https://github.com/ottrproject/OTTR_Template/blob/main/config_automation.yml"
+class="uri">https://github.com/ottrproject/OTTR_Template/blob/main/config_automation.yml</a>.
+(be careful to keep your selections for the configuration you would
+like).</p></li>
+<li><p>Your workflow files may be out of date compared to the template
+and you may need to request a sync by opening an issue in the template
+repository.</p></li>
+</ul>
 <div
 id="you-observe-the-code-for-include_slide-or-img-src...-...-rather-than-the-google-slide-image."
-class="section level3">
-<h3>You observe the code for <code>include_slide()</code> or
+class="section level4">
+<h4>You observe the code for <code>include_slide()</code> or
 <code>&lt;img src="...", ... &gt;</code> rather than the Google Slide
-image.</h3>
+image.</h4>
 <p>Check the formatting of the code chunk, particularly paying attention
 to the <code>fig.alt</code> argument.</p>
 <p>Make sure there are:</p>
@@ -648,11 +638,48 @@ to not be properly rendered.
 </details>
 <hr />
 </div>
+</div>
+<div id="errors-for-pull-request-check-failures" class="section level3">
+<h3>Errors for pull request check failures</h3>
+<p>When you open a pull request, you should see a report like this:</p>
+<p><img
+src="https://github.com/ottrproject/OTTR_Template/raw/main/resources/screenshots/gha-actions-error.png" /></p>
+<p>When you see an ❌ , click on the <code>Details</code> button to see
+the error message. We’ll discuss the most common error messages
+here.</p>
+<hr />
+<div id="file-is-not-in-png-format-google-slides-permissions-fail"
+class="section level4">
+<h4><code>file is not in PNG format</code>: Google Slides permissions
+fail</h4>
+<p><em>Error example:</em></p>
+<pre><code>Error in png::readPNG(path, native = TRUE, info = TRUE) :
+  file is not in PNG format
+Calls: local ... lapply -&gt; FUN -&gt; raster_dpi_width -&gt; attr -&gt; &lt;Anonymous&gt;
+Execution halted
+Error in Rscript_render(f, render_args, render_meta, add1, add2) :
+  Failed to compile &lt;file_name&gt;.Rmd
+Calls: local ... &lt;Anonymous&gt; -&gt; render_new_session -&gt; Rscript_render
+Execution halted
+Error: bookdown::render_book() failed to render the output format &#39;bookdown::gitbook&#39;.
+Execution halted</code></pre>
+<p><em>What does this mean?:</em></p>
+<p>Your Google Slides presentation you have tried to retrieve a slide
+from with <code>ottrpal::include_slide()</code> is not public. Your
+Google Slide document must be set to <code>Anyone with a link</code>.
+See <a
+href="https://support.wix.com/en/article/setting-permissions-for-google-drive-files-and-folders#:~:text=Settings%20Permissions%20for%20a%20Google,edit%20and%20comment%20as%20well.">this
+article for more details.</a> The renders will fail if this is not set!
+See the <a
+href="https://www.ottrproject.org/writing_content_courses.html#set-up-images">setting
+up images and graphics section</a> for more details.</p>
+<hr />
+</div>
 <div
 id="process-completed-with-exit-code-1.-spell-checkurl-checkquiz-format-fail"
-class="section level3">
-<h3><code>Process completed with exit code 1.</code>: Spell check/url
-check/quiz format fail:</h3>
+class="section level4">
+<h4><code>Process completed with exit code 1.</code>: Spell check/url
+check/quiz format fail:</h4>
 <p>Underneath a section that says something like:
 <code>**Check spelling/url/quiz errors - fail if too many of them**</code>
 you may see something like:</p>
@@ -673,8 +700,8 @@ button.</p>
 <hr />
 </div>
 <div id="conflict-modifydelete-merge-conflict-fail"
-class="section level3">
-<h3><code>CONFLICT (modify/delete)</code>: Merge conflict fail:</h3>
+class="section level4">
+<h4><code>CONFLICT (modify/delete)</code>: Merge conflict fail:</h4>
 <p><em>Error example:</em></p>
 <pre><code>CONFLICT (modify/delete): &lt;file_name&gt; deleted in &lt;branch_name&gt; and modified in HEAD. Version HEAD of &lt;file_name&gt; left in tree.</code></pre>
 <p>This will often happen when render-preview’s git handling doesn’t
@@ -698,9 +725,9 @@ this</a> for more info on how to delete a branch.</li>
 </div>
 <div
 id="parser-error-while-parsing-a-flow-sequence-_bookdown.yml-parse-error"
-class="section level3">
-<h3><code>Parser error: while parsing a flow sequence</code>:
-_bookdown.yml parse error</h3>
+class="section level4">
+<h4><code>Parser error: while parsing a flow sequence</code>:
+_bookdown.yml parse error</h4>
 <p>If you see an error like this:</p>
 <pre><code>Run Rscript -e &quot;bookdown::render_book(&#39;index.Rmd&#39;, output_format = &#39;all&#39;)&quot;
 Error in yaml::yaml.load(..., eval.expr = TRUE) :
@@ -725,9 +752,9 @@ preview GitHub action runs appropriately.</p>
 </div>
 <div
 id="error-github-action-link-to-download-and-preview-.docx-file-is-returning-a-404-error"
-class="section level3">
-<h3><code>404 error</code>: GitHub Action link to download and preview
-<code>.docx</code> file is returning a 404 error</h3>
+class="section level4">
+<h4><code>404 error</code>: GitHub Action link to download and preview
+<code>.docx</code> file is returning a 404 error</h4>
 <p>If you get a 404 error after clicking the link while attempting to
 download the <code>.docx</code> file from the GitHub Action rendered
 previews, then add the following code to the end of the
@@ -739,9 +766,9 @@ preview GitHub action runs appropriately.</p>
 </div>
 <div
 id="error-in-if-title-x2-returnhead-the-condition-has-length-1-run-bookdown-render-error"
-class="section level3">
-<h3><code>Error in if (title == x2) return(head) : the condition has length &gt; 1</code>:
-Run bookdown render error</h3>
+class="section level4">
+<h4><code>Error in if (title == x2) return(head) : the condition has length &gt; 1</code>:
+Run bookdown render error</h4>
 <p>If you observe an error like this:</p>
 <pre><code>Error in if (title == x2) return(head) : the condition has length &gt; 1
 Calls: &lt;Anonymous&gt; ... split_chapters -&gt; build -&gt; sub -&gt; is.factor -&gt; prepend_chapter_title
@@ -762,14 +789,6 @@ following <code>html</code> frontmatter if it’s present:</p>
   &lt;/html&gt;</code></pre>
 </div>
 </div>
-<div id="content-not-rendering" class="section level2">
-<h2>Content not rendering</h2>
-<p>Check that the config file is up-to-date. It should look like this:
-<a
-href="https://github.com/ottrproject/OTTR_Template/blob/main/config_automation.yml"
-class="uri">https://github.com/ottrproject/OTTR_Template/blob/main/config_automation.yml</a>.
-(be careful to keep your selections for the configuration you would
-like).</p>
 </div>
 
 <hr>
@@ -837,7 +856,7 @@ $(document).ready(function ()  {
 
     // establish options
     var options = {
-      selectors: "h1,h2,h3",
+      selectors: "h1,h2,h3,h4",
       theme: "bootstrap3",
       context: '.toc-content',
       hashGenerator: function (text) {
