@@ -3,6 +3,7 @@ output:
   html_document:
     toc: true
     toc_float: true
+    toc_depth: 4
 ---
 
 ## Search on OTTR docs
@@ -17,36 +18,20 @@ Search on the OTTR docs for what you are looking for. Note that first few entrie
 ## Most Common Errors
 
 This guide will describe the most common OTTR errors and pitfalls and how to address them.
-When you open a pull request, you should see a report like this:
 
-![](https://github.com/ottrproject/OTTR_Template/raw/main/resources/screenshots/gha-actions-error.png)
+### Content not rendering or updating
 
-When you see an ❌ , click on the `Details` button to see the error message. We'll discuss the most common error messages here.
+This may be a quiet error where the content just doesn't update and you are not warned that there is a problem.
 
-***
+* Check that the GitHub repository `GH_PAT` is up to date. (An associated GitHub Actions error that suggests the `GH_PAT` needs to be updated is an `exit code 128`)
+     * Use this [cheatsheet on updating your GH_PAT](https://www.ottrproject.org/cheatsheets/ottr_token.html)  if you need help.
 
-### `file is not in PNG format`: Google Slides permissions fail
+* Check that the config file is up-to-date. It should look like this: https://github.com/ottrproject/OTTR_Template/blob/main/config_automation.yml.
+(be careful to keep your selections for the configuration you would like).
 
-_Error example:_
-```
-Error in png::readPNG(path, native = TRUE, info = TRUE) :
-  file is not in PNG format
-Calls: local ... lapply -> FUN -> raster_dpi_width -> attr -> <Anonymous>
-Execution halted
-Error in Rscript_render(f, render_args, render_meta, add1, add2) :
-  Failed to compile <file_name>.Rmd
-Calls: local ... <Anonymous> -> render_new_session -> Rscript_render
-Execution halted
-Error: bookdown::render_book() failed to render the output format 'bookdown::gitbook'.
-Execution halted
-```
-_What does this mean?:_
+* Your workflow files may be out of date compared to the template and you may need to request a sync by opening an issue in the template repository.
 
-Your Google Slides presentation you have tried to retrieve a slide from with `ottrpal::include_slide()` is not public. Your Google Slide document must be set to `Anyone with a link`. See [this article for more details.](https://support.wix.com/en/article/setting-permissions-for-google-drive-files-and-folders#:~:text=Settings%20Permissions%20for%20a%20Google,edit%20and%20comment%20as%20well.) The renders will fail if this is not set! See the [setting up images and graphics section](https://www.ottrproject.org/writing_content_courses.html#set-up-images) for more details.
-
-***
-
-### You observe the code for `include_slide()` or `<img src="...", ... >` rather than the Google Slide image. 
+#### You observe the code for `include_slide()` or `<img src="...", ... >` rather than the Google Slide image. 
 
 Check the formatting of the code chunk, particularly paying attention to the `fig.alt` argument. 
 
@@ -76,7 +61,38 @@ Note: Single quotation marks surrounding the whole argument with double quotatio
 
 ***
 
-### `Process completed with exit code 1.`: Spell check/url check/quiz format fail:
+### Errors for pull request check failures
+
+When you open a pull request, you should see a report like this:
+
+![](https://github.com/ottrproject/OTTR_Template/raw/main/resources/screenshots/gha-actions-error.png)
+
+When you see an ❌ , click on the `Details` button to see the error message. We'll discuss the most common error messages here.
+
+***
+
+#### `file is not in PNG format`: Google Slides permissions fail
+
+_Error example:_
+```
+Error in png::readPNG(path, native = TRUE, info = TRUE) :
+  file is not in PNG format
+Calls: local ... lapply -> FUN -> raster_dpi_width -> attr -> <Anonymous>
+Execution halted
+Error in Rscript_render(f, render_args, render_meta, add1, add2) :
+  Failed to compile <file_name>.Rmd
+Calls: local ... <Anonymous> -> render_new_session -> Rscript_render
+Execution halted
+Error: bookdown::render_book() failed to render the output format 'bookdown::gitbook'.
+Execution halted
+```
+_What does this mean?:_
+
+Your Google Slides presentation you have tried to retrieve a slide from with `ottrpal::include_slide()` is not public. Your Google Slide document must be set to `Anyone with a link`. See [this article for more details.](https://support.wix.com/en/article/setting-permissions-for-google-drive-files-and-folders#:~:text=Settings%20Permissions%20for%20a%20Google,edit%20and%20comment%20as%20well.) The renders will fail if this is not set! See the [setting up images and graphics section](https://www.ottrproject.org/writing_content_courses.html#set-up-images) for more details.
+
+***
+
+#### `Process completed with exit code 1.`: Spell check/url check/quiz format fail:
 
 Underneath a section that says something like: `**Check spelling/url/quiz errors - fail if too many of them**` you may see something like:
 ```
@@ -97,7 +113,7 @@ Click on the `Download the errors here` to see the list of errors and which file
 
 ***
 
-### `CONFLICT (modify/delete)`: Merge conflict fail:
+#### `CONFLICT (modify/delete)`: Merge conflict fail:
 
 _Error example:_
 ```
@@ -113,7 +129,7 @@ This will often happen when render-preview's git handling doesn't know which cha
 
 ***
 
-### `Parser error: while parsing a flow sequence`: _bookdown.yml parse error
+#### `Parser error: while parsing a flow sequence`: _bookdown.yml parse error
 
 If you see an error like this:
 ```
@@ -139,7 +155,7 @@ rmd_files: ["index.Rmd",
 ```
 Commit the changes to your `_bookdown.yml` and see if the preview GitHub action runs appropriately.
 
-### `404 error`: GitHub Action link to download and preview `.docx` file is returning a 404 error
+#### `404 error`: GitHub Action link to download and preview `.docx` file is returning a 404 error
 
 If you get a 404 error after clicking the link while attempting to download the `.docx` file from the GitHub Action rendered previews, then add the following code to the end of the `_output.yml` file:
 
@@ -150,7 +166,7 @@ bookdown::word_document2:
 
 Commit the changes to your `_output.yml` and see if the preview GitHub action runs appropriately.
 
-### `Error in if (title == x2) return(head) : the condition has length > 1`: Run bookdown render error
+#### `Error in if (title == x2) return(head) : the condition has length > 1`: Run bookdown render error
 
 If you observe an error like this:
 
@@ -181,8 +197,4 @@ Then look at the `GA_Script.Rhtml` file and remove the following `html` frontmat
   </body>
   </html>
 ```
-## Content not rendering
-
-Check that the config file is up-to-date. It should look like this: https://github.com/ottrproject/OTTR_Template/blob/main/config_automation.yml.
-(be careful to keep your selections for the configuration you would like).
 
