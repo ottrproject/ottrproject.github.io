@@ -67,6 +67,7 @@ Favicons
 GHA
 github
 github
+GH
 GHA
 Github
 GitKraken
